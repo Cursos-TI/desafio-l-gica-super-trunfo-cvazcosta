@@ -14,8 +14,17 @@ int main() {
     float area2, densidade_pop2, pib_pc2, sup_poder2;
     double pib2;
 
-    int populacao, area, pib, pontos_turisticos, atributo, 
+    int populacao, area, pib, pontos_turisticos, atributo1, atributo2,  
     densidade_pop, pib_pc, sup_poder;
+
+    // Alternativas do menu interativo
+    char alt1[40] = "1- Nº de Habitantes";
+    char alt2[40] = "2- Nº de Pontos Turísticos";
+    char alt3[40] = "3- Área";
+    char alt4[40] = "4- PIB";
+    char alt5[40] = "5- Densidade Populacional";
+    char alt6[40] = "6- PIB Per Capita";
+    char alt7[40] = "7- Super Poder";
 
     // Cadastro da 1ª carta    
     printf("Informe o código do estado: ");
@@ -114,21 +123,54 @@ int main() {
     pib_pc2 +
     (1 / densidade_pop2);
 
-    // Menu para escolha do atributo a ser comparado
-    printf("\n*** Escolha o atributo para comparar ***\n");
-    printf("1- Nº de Habitantes\n");
-    printf("2- Nº de Pontos Turísticos\n");
-    printf("3- Área\n");
-    printf("4- PIB\n");
-    printf("5- Densidade Populacional\n");
-    printf("6- PIB Per Capita\n");
-    printf("7- Super Poder\n");
+    // Menu para escolha do primeiro atributo a ser comparado
+    printf("\n*** Escolha o primeiro atributo para comparar ***\n");
+    printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n", 
+    alt1, alt2, alt3, alt4, alt5, alt6, alt7);    
     printf("Digite o número associado à opção desejada: ");
-    scanf(" %d", &atributo);
+    scanf(" %d", &atributo1);
+
+    // Definição das alternativas restantes
+    printf("\n*** Escolha o segundo atributo para comparar ***\n");
+
+    switch (atributo1)
+    {
+    case 1:
+        printf("%s\n%s\n%s\n%s\n%s\n%s\n", alt2, alt3, alt4, alt5, alt6, alt7); 
+        break;
+    
+    case 2:
+        printf("%s\n%s\n%s\n%s\n%s\n%s\n", alt1, alt3, alt4, alt5, alt6, alt7);
+        break; 
+
+    case 3:
+        printf("%s\n%s\n%s\n%s\n%s\n%s\n", alt1, alt2, alt4, alt5, alt6, alt7);
+        break;
+
+    case 4:
+        printf("%s\n%s\n%s\n%s\n%s\n%s\n", alt1, alt2, alt3, alt5, alt6, alt7);
+        break;
+    
+    case 5:
+        printf("%s\n%s\n%s\n%s\n%s\n%s\n", alt1, alt2, alt3, alt4, alt6, alt7);
+        break;
+
+    case 6:
+        printf("%s\n%s\n%s\n%s\n%s\n%s\n", alt1, alt2, alt3, alt4, alt5, alt7);
+        break;
+
+    case 7:
+        printf("%s\n%s\n%s\n%s\n%s\n%s\n", alt1, alt2, alt3, alt4, alt5, alt6);
+        break; 
+    }
+
+    printf("Digite o número associado à opção desejada: ");
+    scanf(" %d", &atributo2);
     
     printf("\n%s x %s\n", nome_cidade1, nome_cidade2);
 
-    switch (atributo)
+    // Preciso melhorar a lógica de comparação dos atributos individuais
+    switch (atributo1)
     {
     case 1:
             printf("Atributo escolhido: Nº de Habitantes\n");
