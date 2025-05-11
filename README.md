@@ -2,8 +2,10 @@
 
 ## Como compilar e executar
 
-- Para compilar basta executar o seguinte código em seu terminal: `gcc logicaSuperTrunfo.c -o <nome-desejado-para-o-executavel>`
-- Para executar basta executar o seguinte código em seu terminal: `./<nome-do-executavel>`
+- Para compilar basta executar o seguinte código em seu terminal: 
+  - `gcc logicaSuperTrunfo.c -o <nome-desejado-para-o-executavel>`
+- Para executar basta executar o seguinte código em seu terminal: 
+  - `./<nome-do-executavel>`
 
 ## Exemplo de Execução
 
@@ -13,7 +15,7 @@ Após a execução, o programa irá solicitar os dados para cadastro da *primeir
 ```Plain text
 Informe o código do estado: PE
 Informe o código da carta: RCF
-Informe o nome da cidade (separado por _ se for nome composto): Recife
+Informe o nome da cidade: Recife
 Informe a quantidade de habitantes: 200
 Informe a quantidade de pontos turísticos: 10
 Informe a área da cidade em Km²: 15
@@ -67,19 +69,19 @@ Após o cadastro das duas cartas e da escolha dos dois atributos de comparação
 
 ```Plain text
 *** Recife x Caruaru ***
-Primeiro atributo escolhido: Área
-Segundo atributo escolhido: Densidade Populacional
+1º atributo escolhido: Área
+2º atributo escolhido: Densidade Populacional
 
-Primeiro atributo: Atributo escolhido: Área
-recife: 15.00
-caruaru: 24.00
+1º atributo: Área
+Recife: 15.00
+Caruaru: 24.00
 
-Segundo atributo: Atributo escolhido: Densidade Populacional
-recife: 13.33
-caruaru: 3.12
+2º atributo: Densidade Populacional
+Recife: 13.33
+Caruaru: 3.12
 
 Soma da 1ª Carta: 28.33
 Soma da 2ª Carta: 27.12
 
-A carta 1 venceu!
+A 1ª Carta venceu!
 ```
