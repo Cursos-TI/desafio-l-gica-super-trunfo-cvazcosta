@@ -387,9 +387,9 @@ int main() {
 
     // Verificando e informando o resultado final
     if (soma1 > soma2)
-        printf("\nA 1ª carta venceu!\n");
+        printf("\nA 1ª Carta venceu!\n");
     else if (soma2 < soma1)
-        printf("\nA 2ª carta venceu!\n");
+        printf("\nA 2ª Carta venceu!\n");
     else
         printf("\nEmpate!\n");
     
